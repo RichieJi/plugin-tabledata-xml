@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.db.xml</id>
+    <name><![CDATA[XML数据集]]></name>
+    <active>yes</active>
+    <version>2.0</version>
+    <env-version>8.0</env-version>
+    <jartime>2017-01-01</jartime>
+    <vendor>fanruan.richie</vendor>
+    <description><![CDATA[可以将XML格式的数据转变为报表中可以使用的数据表。]]></description>
+    <change-notes><![CDATA[
+
+    ]]></change-notes>
+    <extra-core>
+        <LocaleFinder class="com.fr.plugin.db.xml.XMLLocaleFinder"/>
+    </extra-core>
+    <extra-report>
+    </extra-report>
+    <extra-designer>
+        <ConnectionProvider class="com.fr.plugin.db.xml.XMLConnectionImpl"/>
+        <TableDataDefineProvider class="com.fr.plugin.db.xml.XMLTableDataDefine"/>
+        <ServerTableDataDefineProvider class="com.fr.plugin.db.xml.XMLTableDataDefine"/>
+    </extra-designer>
+</plugin>
